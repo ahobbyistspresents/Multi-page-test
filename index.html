@@ -27,16 +27,34 @@
             <p>Are you a retailer, content creator, or fellow enthusiast? We love partnering with like-minded businesses and individuals. Let’s work together to bring unique gifts to more people.</p>
         </section>
 
-        <section id="contact">
-            <h2>Contact Us</h2>
+<div class="full-container">
+<form id="contactForm">
+    <h2>Contact Us</h2>
             <p>Got a question or an idea? Get in touch.</p>
-            <form action="submit_form.php" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
-        </section>
+  <input type="text" name="First name" placeholder="First Name" required>
+  <input type="text" name="Last name" placeholder="Last Name" required>
+  <input type="email" name="Email" placeholder="Email" required>
+  <textarea name="Message" placeholder="Your Message" required></textarea>
+  <button type="submit">Send</button>
+</form>
+
+<script>
+  document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+    
+    var formData = new FormData(this);
+    var url = "https://script.google.com/macros/s/AKfycbxPX5pKtxIBjE0tEADmFe5nHkf34hilngjv3y7bd-znkzTHEaEWHbM43gpzIRD_DV86/exec"; // Replace with your actual web app URL
+
+    fetch(url, {
+      method: "POST",
+      body: formData
+    })
+    .then(response => response.text())
+    .then(data => alert("Message Sent!"))
+    .catch(error => alert("Error! " + error));
+  });
+</script>
+</div>
     </main>
 
     <!-- Include Footer -->
