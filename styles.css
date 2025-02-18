@@ -12,6 +12,21 @@ header {
             background: white; /* Placeholder for header image */
         }
 
+ .nav-links {
+            display: flex;
+            gap: 20px;
+            padding-right: 20px;
+            padding-left: 10px;
+        }
+        .nav-links a {
+            decoration: none;
+            color: black;
+        }
+
+        .nav-links a:hover {
+            decoration: underline;
+        }
+
 body {
             font-family: 'Aileron', sans-serif;
             font-size: 12pt;
@@ -28,12 +43,6 @@ footer {
             text-align: center;
             padding: 10px;
         }
-
-nav a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-}
 
 main {
     padding: 20px;
