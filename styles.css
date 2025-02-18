@@ -5,11 +5,13 @@ body {
     text-align: center;
 }
 
-header, {
-    background: #222;
-    color: white;
-    padding: 15px 0;
-}
+header {
+            width: auto;
+            align-items: center;
+            text-align: center;
+                padding-left: 2.5%;
+                padding-right: 2.5%;
+        }
 
 footer {
             background: #f4f4f4;
