@@ -11,25 +11,59 @@
     <div id="header"></div>
 
     <main>
-        <section class="hero">
+        <div class="hero">
             <h1>Giftware for Passionate People.</h1>
             <p>Thoughtfully designed gifts people love to give, and enthusiasts love to get.</p>
-        </section>
+        </div>
+        <div class="half-container" style="padding-left; 25px">
+            <h2>A Cyclist's Presents</h2>
+            <a href="acp-cycling-gifts.html"><img src="Pedalling_Truths.png" alt="Cycling Products"></a>
+            <button onclick="location.href='acp-cycling-gifts.html'">Check out ACP's gifts for cyclists</button>
+        </div>
+        <div class="half-container" style="padding-right; 25px">
+            <h2>A Guitarist's Presents</h2>
+            <a href="agp-guitar-gifts.html"><img src="GTT_True_or_False.png" alt="Guitar Products"></a>
+            <button onclick="location.href='agp-guitar-gifts.html'">Check out AGP's gifts for guitarists</button>
+        </div>
+    </div>
 
-        <section id="about">
-            <h2>About A Hobbyist’s Presents</h2>
-            <p>We create unique, data-driven and design-led gifts for cyclists and guitarists. Whether it’s a trivia game, a DIY wire sculpture, or themed wrapping paper, we craft gifts that show you really know their passion.</p>
-        </section>
+    <div class="full-container" id="about" style="background-image: url('about.png');">
+        <h2><u>About AHP</u></h2>
+        <div class="split-container" style="background-color: rgba(255, 255, 255, .75);padding-left: 25px;padding-top: 25px;padding-bottom: 25px;padding-right: 25px;">
+            <div style="padding-right: 100px;">
+                <p>Design, data, and fun drive product development.</p>
+                <p>Eoghan McHugh, a cycling and guitar enthusiast, started ACP in 2023 and AGP in 2024 to create giftware for cyclists and guitarists.</p>
+                <p>Each product answers four key questions:
+                    <ol>
+                        <li>Is it clear to the customer what the product is about?</li>
+                        <li>Is the design and quality gift-worthy?</li>
+                        <li>Will the recipient enjoy the product?</li>
+                        <li>Will the recipient get something from their gift?</li>
+                    </ol>
+                Every item is crafted with these principles, ensuring thoughtful, well-designed gifts for cyclists and guitarists alike.</p>
+            </div>
+            <!--- <div>
+                <center><img src="about-image.jpg" alt="About AHP"></center>
+            </div> --->
+        </div>
+    </div>
 
-        <section id="collaborate">
-            <h2>Let’s Collaborate</h2>
-            <p>Are you a retailer, content creator, or fellow enthusiast? We love partnering with like-minded businesses and individuals. Let’s work together to bring unique gifts to more people.</p>
-        </section>
+    <div class="full-container" id="collaborate" style="background-image: url('collaborate.png');">
+        <h2><u>Let's Collaborate</u></h2>
+        <div class="split-container" style="background-color: rgba(255, 255, 255, .75);padding-left: 25px;padding-top: 25px;padding-bottom: 25px;padding-right: 25px;">
+            <div style="padding-right: 100px;">
+                <p>Bikes and guitars aren't the only hobbies worth obsessing over.</p>
+                <p>But bikes and guitars are what keep me up at night.</p>
+                <p>Got a hobby that you're passionate about? Send me an email. We can find a way to collaborate to bring your idea to life.</p>
+            </div>
+            <div>
+                <center><button onclick="location.href='#contact'">Get in touch to collaborate</button></center>
+            </div>
+        </div>
+    </div>
 
-<div class="full-container">
+<div class="full-container" id="contact">
 <form id="contactForm">
-    <h2>Contact Us</h2>
-            <p>Got a question or an idea? Get in touch.</p>
   <input type="text" name="First name" placeholder="First Name" required>
   <input type="text" name="Last name" placeholder="Last Name" required>
   <input type="email" name="Email" placeholder="Email" required>
