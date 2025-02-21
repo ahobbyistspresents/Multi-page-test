@@ -1,3 +1,22 @@
+header {
+            width: auto;
+            align-items: center;
+            text-align: center;
+                padding-left: 2.5%;
+                padding-right: 2.5%;
+        }
+
+.header-image {
+            /*width: 100%;*/
+            height: 200px;
+            background: white; /* Placeholder for header image */
+        }
+
+logo {
+            width: 250px;
+            height: 125px;
+        }
+
 button {
             display: block;
             margin: auto;
