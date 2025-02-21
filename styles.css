@@ -74,6 +74,18 @@ body {
             text-align: center;
         }
 
+.split-container {
+            display: flex;
+            justify-content: space-between;
+            text-align: left;
+            box-sizing: border-box;
+        }
+        
+.split-container div {
+            width: 50%;
+        }
+
+
  img {
             height: 400px;
             width: 400px;
