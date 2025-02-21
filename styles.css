@@ -92,6 +92,26 @@ button {
             font-size: 16px;
         }
 
+ input, textarea {
+            width: 90%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        
+         .form-row {
+            display: flex;
+            justify-content:left;
+            gap: 00px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        
+        }
+        .form-row input {
+            width: 45%;
+        }
+
+
 footer {
             background: #f4f4f4;
             text-align: center;
