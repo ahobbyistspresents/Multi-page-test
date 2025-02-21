@@ -17,6 +17,31 @@ logo {
             height: 125px;
         }
 
+nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: auto;
+            background: #f4f4f4;
+            padding: 10px 20px;
+        }
+
+ .nav-links {
+            display: flex;
+            gap: 20px;
+            padding-right: 20px;
+            padding-left: 10px;
+        }
+
+.nav-links a {
+            decoration: none;
+            color: black;
+        }
+
+.nav-links a:hover {
+            decoration: underline;
+        }
+
 button {
             display: block;
             margin: auto;
