@@ -126,7 +126,7 @@ h1 {
   text-align: left;
 }
             
-        button {
+        .button {
             display: block;
             margin: auto;
             padding: 20px;
