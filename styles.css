@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 header {
             width: auto;
             align-items: center;
@@ -7,7 +13,6 @@ header {
         }
 
 .header-image {
-            /*width: 100%;*/
             height: 200px;
             background: white; /* Placeholder for header image */
         }
@@ -41,6 +46,15 @@ nav {
 .nav-links a:hover {
             decoration: underline;
         }
+
+.hamburger {
+  display: none;
+  font-size: 1.8em;
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
 
 body {
             font-family: 'Aileron', sans-serif;
@@ -102,10 +116,9 @@ body {
   text-align: left;
 }
 
- img {
+img {
             height: 400px;
-            width: 400px;
-            
+            width: 400px;            
         }
 
 button {
@@ -119,6 +132,17 @@ button {
             cursor: pointer;
             font-size: 16px;
         }
+
+.inline-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.inline-buttons button {
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
 
  input, textarea {
             width: 90%;
@@ -218,3 +242,33 @@ footer {
             text-align: center;
             padding: 10px;
         }
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background: #333;
+    width: 100%;
+    left: 0;
+    top: 60px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
