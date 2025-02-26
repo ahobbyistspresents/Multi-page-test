@@ -1,14 +1,15 @@
-function loadComponent(id, file) {
-    fetch(file)
-        .then(response => response.text())
-        .then(data => document.getElementById(id).innerHTML = data);
-}
-
 document.addEventListener("DOMContentLoaded", function() {
-    loadComponent("header", "header.html");
-    loadComponent("footer", "footer.html");
+    // Load Header and Footer
+    fetch("header.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("header-placeholder").innerHTML = data);
+    
+    fetch("footer.html")
+        .then(response => response.text())
+        .then(data => document.getElementById("footer-placeholder").innerHTML = data);
 
-     setTimeout(() => {
+    // Mobile Menu Toggle
+    setTimeout(() => {
         document.querySelector(".hamburger").addEventListener("click", function() {
             document.querySelector(".nav-links").classList.toggle("show");
         });
